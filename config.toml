@@ -1,0 +1,4 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'technical.dc'
+theme = "hugo-theme-console"
