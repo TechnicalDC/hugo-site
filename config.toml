@@ -4,8 +4,6 @@ title = 'technical.dc'
 theme = "hugo-theme-console"
 
 [params]
-  # Cutting off the page title to two chars for mobile (console-demo -> co)
-  # titleCutting = true
 
   [[params.navlinks]]
   name = "about/"
@@ -18,3 +16,11 @@ theme = "hugo-theme-console"
   [[params.navlinks]]
   name = "photos/"
   url = "photos/"
+
+  [[params.social]]
+  name = "github"
+  url = "https://github.com/technicaldc"
+
+  [[params.social]]
+  name = "youtube"
+  url = "https://youtube.com/@TechnicalDC25"
