@@ -31,7 +31,7 @@
 }
 
 :root {
-    --global-font-size: 16px;
+    --global-font-size: 14px;
     --global-font-color: #444;
     --mono-font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     --font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
@@ -178,6 +178,15 @@ figure {
             minmax(calc(var(--page-width) / 4), 1fr));
 }
 
+img {
+	width: unset;
+	max-width: 100%;
+}
+
+.image-grid img {
+	width: 100%;
+}
+
 .terminal-prompt::after {
     -webkit-animation: cursor 1s infinite;
     animation: cursor 1s infinite;
@@ -214,12 +223,23 @@ figure {
     padding-top: 0;
 }
 
+.about-section {
+	display: flow;
+}
+.about-section > dev {
+	width: 50%;
+}
+
 @media only screen and (max-width: 850px) {
     .site-name {
         width: 2ch;
         overflow: hidden;
         display: inline-block;
     }
+
+	 img {
+		 width: 100%;;
+	 }
 
     .terminal-nav {
         align-items: flex-start;

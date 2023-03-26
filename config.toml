@@ -4,6 +4,7 @@ title = 'technical.dc'
 theme = "hugo-theme-console"
 
 [params]
+  profile = "static/images/profile.jpg"
 
   [[params.navlinks]]
   name = "about/"

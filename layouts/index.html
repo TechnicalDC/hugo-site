@@ -1,18 +1,29 @@
 {{ define "main" }}
 
-<h1>About this theme</h1>
-
-<p>
-{{ with .Site.GetPage "/about" }}
-{{ .Summary }}
-{{ end }}
-<br/>
-{{ if .Truncated }}
-<a href="about/">.more</a>
-{{ end }}
-{{ partial "social-links" . }}
-</p>
-<br/>
+<div class="about-section">
+	{{ with .Site.GetPage "/about" }}
+	<div class="about-right">
+        {{ $image := .Page.Resources.GetMatch .Params.image }}
+		{{ with $image }}
+            {{ $thumb := .Resize "400x" }}
+				<img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}">
+		{{ end }}
+	</div>
+	<div class="about-right">
+		<h1>{{ .Title }}</h1>
+		<p>
+		{{ with .Site.GetPage "/about" }}
+		{{ .Summary }}
+		{{ end }}
+		<br/>
+		{{ if .Truncated }}
+		<a href="about/">.more</a>
+		{{ end }}
+		{{ partial "social-links" . }}
+		</p>
+	</div>
+	{{ end }}
+</div>
 
 <h1>Latest posts</h1>
 
@@ -24,6 +35,9 @@
                 <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>
                 <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
                 {{ .Summary }}
+					 {{ if .Truncated }}
+					 <a href="{{ .Permalink }}">.more</a>
+					 {{ end }}
             </p>
         </div>    
     {{ end }}
