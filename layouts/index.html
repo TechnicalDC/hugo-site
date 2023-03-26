@@ -3,12 +3,13 @@
 <h1>About this theme</h1>
 
 <p>
-A minimal, responsive and light theme for Hugo inspired by Linux console.
-<!-- {{ with .Site.GetPage "/about" }} -->
-<!-- {{ .Summary }} -->
-<!-- {{ end }} -->
+{{ with .Site.GetPage "/about" }}
+{{ .Summary }}
+{{ end }}
 <br/>
+{{ if .Truncated }}
 <a href="about/">.more</a>
+{{ end }}
 {{ partial "social-links" . }}
 </p>
 <br/>

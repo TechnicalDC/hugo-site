@@ -24,3 +24,7 @@ theme = "hugo-theme-console"
   [[params.social]]
   name = "youtube"
   url = "https://youtube.com/@TechnicalDC25"
+
+  [[params.social]]
+  name = "instagram"
+  url = "https://instagram.com/technicaldc.me"
