@@ -50,7 +50,6 @@
     }
 }
 
-
 .sidebar-heading {
     text-transform: none;
     letter-spacing: 0;
@@ -168,7 +167,7 @@ figure {
     color: var(--global-font-color);
 }
 
-.image-grid {
+.image-grid, .about-section {
     display: grid;
     grid-template-rows: auto;
     display: grid;
@@ -221,13 +220,6 @@ img {
     width: 130px;
     z-index: 400;
     padding-top: 0;
-}
-
-.about-section {
-	display: flow;
-}
-.about-section > dev {
-	width: 50%;
 }
 
 @media only screen and (max-width: 850px) {

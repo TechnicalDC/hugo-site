@@ -3,7 +3,7 @@
 <div class="about-section">
 	{{ with .Site.GetPage "/about" }}
 	<div class="about-right">
-        {{ $image := .Page.Resources.GetMatch .Params.image }}
+		{{ $image := .Page.Resources.GetMatch .Params.image }}
 		{{ with $image }}
             {{ $thumb := .Resize "400x" }}
 				<img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}">
@@ -35,9 +35,6 @@
                 <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>
                 <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
                 {{ .Summary }}
-					 {{ if .Truncated }}
-					 <a href="{{ .Permalink }}">.more</a>
-					 {{ end }}
             </p>
         </div>    
     {{ end }}
