@@ -5,6 +5,7 @@ theme = "hugo-theme-console"
 
 [params]
   profile = "static/images/profile.jpg"
+  email = "chauhandilip305@gmail.com"
 
   [[params.navlinks]]
   name = "about/"
@@ -17,6 +18,10 @@ theme = "hugo-theme-console"
   [[params.navlinks]]
   name = "photos/"
   url = "photos/"
+
+  [[params.navlinks]]
+  name = "contact/"
+  url = "contact/"
 
   [[params.social]]
   name = "github"

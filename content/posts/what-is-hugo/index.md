@@ -1,5 +1,5 @@
 +++
-title = "Introduction"
+title = "What is hugo"
 date = "2019-08-03"
 +++
 
