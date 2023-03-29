@@ -43,18 +43,21 @@
 {{ end }}
 </div>
 
-<h1>Latest photos</h1>
+<h1>Videos</h1>
 
-<div class="image-grid">
-{{ with .Site.GetPage "/photos" }}
-    {{ range first 3 (sort .Data.Pages "Date" "desc")}}
-        <a href="{{ .Permalink }}" title="{{ .Title }}">
-        {{ $image := .Page.Resources.GetMatch .Params.image }}
-        {{ with $image }}
-            {{ $thumb := .Resize "400x" }}
-            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
-        {{end}}
-        </a>
+<div class="card-grid">
+{{ with .Site.GetPage "/videos" }}
+    {{ range first 3 (sort .Data.Pages "Date" "desc") }}
+	<div class="card">
+		{{ $image := .Page.Resources.GetMatch .Params.thumbnail }}
+		{{ with $image }}
+		<img src="{{ $image.RelPermalink }}" alt="thumbnail">
+    {{ end }}
+		<p>
+			<h2> <a href="{{ .Permalink }}">{{ .Title }}</a> </h2>
+			{{ .Summary }}
+		</p>
+	</div>
     {{ end }}
 {{ end }}
 </div>

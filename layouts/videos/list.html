@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h1>{{ .Page.Title }}</h1>
+{{ .Content }}
+<div class="card-grid">
+	{{ range .Pages | first 6 }}
+	<div class="card">
+            {{ $image := .Page.Resources.GetMatch .Params.thumbnail }}
+            {{ with $image }}
+		<img src="{{ $image.RelPermalink }}" alt="thumbnail">
+    {{ end }}
+		<p>
+			<h2> <a href="{{ .Permalink }}">{{ .Title }}</a> </h2>
+			{{ .Summary }}
+		</p>
+	</div>
+    {{ end }}
+</div>
+{{ end }}

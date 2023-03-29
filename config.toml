@@ -16,8 +16,8 @@ theme = "hugo-theme-console"
   url = "posts/"
 
   [[params.navlinks]]
-  name = "photos/"
-  url = "photos/"
+  name = "videos/"
+  url = "videos/"
 
   [[params.navlinks]]
   name = "contact/"
