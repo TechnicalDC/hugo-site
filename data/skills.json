@@ -1,0 +1,30 @@
+{
+	"Languages": {
+		"1" : {
+			"name": "Python"
+		},
+		"2" : {
+			"name": "Golang"
+		},
+		"3" : {
+			"name": "Progress 4GL"
+		},
+		"4" : {
+			"name": "Bash"
+		},
+		"5" : {
+			"name": "MySQL"
+		}
+	},
+	"Framework": {
+		"1": {
+			"name": "Django"
+		},
+		"2": {
+			"name": "Flask"
+		},
+		"3": {
+			"name": "Hugo"
+		}
+	}
+}

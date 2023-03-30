@@ -16,12 +16,9 @@
 		{{ .Summary }}
 		{{ end }}
 		</p>
-		<a href="contact/">contact me</a>
-		<br/>
-		<br/>
-		{{ if .Truncated }}
-		<a href="about/">more</a>
-		{{ end }}
+		<p>
+			<a href="contact/">contact me</a>
+		</p>
 		{{ partial "social-links" . }}
 	</div>
 	{{ end }}

@@ -5,5 +5,6 @@ title = "Hey, I'm Dilip Chauhan"
 +++
 
 Currently working as Progress 4GL developer at [Aliter Business Solutions](https://www.alitersolutions.com/), based in India. I build custom solutions that help to businesses to run flawless.
+<!--more-->
 
-![img](profile.jpg)
+{{< figure src="profile.jpg" alt="profile" >}}
