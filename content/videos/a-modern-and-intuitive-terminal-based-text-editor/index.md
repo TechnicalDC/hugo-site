@@ -2,6 +2,8 @@
 title: "A Modern and Intuitive Terminal Based Text Editor"
 date: 2023-03-30T22:28:43+05:30
 thumbnail: "A-Modern-and-Intuitive-Terminal-Based-Text-Editor.png"
+tags: ["terminal","text-editor","micro"]
+categories: ["youtube"]
 ---
 
 "micro" is an awesome text editor that I've discovered recently, and I wanted

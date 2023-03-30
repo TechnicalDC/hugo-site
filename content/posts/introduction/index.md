@@ -1,6 +1,8 @@
 +++
 title = "Introduction"
 date = "2019-07-01"
+tags = ["hugo"]
+categories = ["posts"]
 +++
 
 [Hugo](https://gohugo.io) is a fast and modern static site generator written in Go, and designed to make website creation fun again.

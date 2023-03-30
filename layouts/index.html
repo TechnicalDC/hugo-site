@@ -24,7 +24,7 @@
 	{{ end }}
 </div>
 
-<h1>Latest posts</h1>
+<h1>Recent Posts</h1>
 
 <div class="posts-list">
 {{ with .Site.GetPage "/posts" }}
@@ -34,13 +34,14 @@
                 <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>
                 <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
                 {{ .Summary }}
+					 {{ partial "taglist" . }}
             </p>
         </div>    
     {{ end }}
 {{ end }}
 </div>
 
-<h1>Videos</h1>
+<h1>Recent Videos</h1>
 
 <div class="card-grid">
 {{ with .Site.GetPage "/videos" }}

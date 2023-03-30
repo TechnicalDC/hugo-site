@@ -2,6 +2,8 @@
 title: "How to Make Vim Look Cool"
 date: 2023-03-29T23:03:06+05:30
 thumbnail: "How-to-Make-Vim-Look-Cool.png"
+tags: ["terminal","text-editor","vim"]
+categories: ["youtube"]
 ---
 
 Welcome to my channel guys. In this video, Will make vanilla vim/neovim look cool
