@@ -8,3 +8,5 @@ Currently working as Progress 4GL developer at [Aliter Business Solutions](https
 <!--more-->
 
 {{< figure src="profile.jpg" alt="profile" >}}
+
+{{< skills >}}

@@ -39,6 +39,7 @@
     --page-width: 70em;
     --display-h1-decoration: 1;
     --code-bg-color: #fff;
+    --branch: 1px solid #a7a9be;
 }
 
 @media only screen and (max-width: 850px) {
@@ -47,6 +48,7 @@
         --global-font-color: #444;
         --global-line-height: 1.6em;
         --page-width: 70em;
+		  --branch: 1px solid #a7a9be;
     }
 }
 
@@ -167,7 +169,7 @@ figure {
     color: var(--global-font-color);
 }
 
-.image-grid, .about-section, .card-grid {
+.image-grid, .about-section, .card-grid, .skills > div {
     display: grid;
     grid-template-rows: auto;
     display: grid;
@@ -241,6 +243,29 @@ img {
 }
 .taglist {
 	margin: 30px 0px;
+}
+
+.skills li {
+	list-style: none;
+}
+
+.skills li::before, .skills li::after {
+    content: "";
+    position: absolute;
+    left: -0.75rem;
+}
+.skills li::before {
+    border-top: var(--branch);
+    top: 0.75rem;
+    width: 0.5rem;
+}
+.skills li::after {
+    border-left: var(--branch);
+    height: 100%;
+    top: 0.25rem;
+}
+.skills li:last-child::after {
+    height: 0.5rem;
 }
 
 @media only screen and (max-width: 850px) {

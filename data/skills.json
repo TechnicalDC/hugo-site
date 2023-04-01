@@ -16,7 +16,7 @@
 			"name": "MySQL"
 		}
 	},
-	"Framework": {
+	"Frameworks": {
 		"1": {
 			"name": "Django"
 		},
@@ -25,6 +25,17 @@
 		},
 		"3": {
 			"name": "Hugo"
+		}
+	},
+	"Devtools": {
+		"1":{
+			"name":"Linux"
+		},
+		"2":{
+			"name": "Unix"
+		},
+		"3": {
+			"name": "Git"
 		}
 	}
 }

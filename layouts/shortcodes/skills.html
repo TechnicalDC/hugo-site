@@ -1,0 +1,36 @@
+<div class="skills">
+	<h1>Skills</h1>
+	<p> Here are a few technologies I’ve been working with recently: </p>
+	<div>
+		<div class="languages">
+			languages
+			<ul>
+				{{ range .Site.Data.skills.Languages }}
+				<li>
+					{{ .name }}
+				</li>
+				{{ end }}
+			</ul>
+		</div>
+		<div class="frameworks">
+			frameworks
+			<ul>
+				{{ range .Site.Data.skills.Frameworks }}
+				<li>
+					{{ .name }}
+				</li>
+				{{ end }}
+			</ul>
+		</div>
+		<div class="devtools">
+			devtools
+			<ul>
+				{{ range .Site.Data.skills.Devtools }}
+				<li>
+					{{ .name }}
+				</li>
+				{{ end }}
+			</ul>
+		</div>
+	</div>
+</div>
