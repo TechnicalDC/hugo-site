@@ -1,6 +1,6 @@
 +++
 title = "What is hugo"
-date = "2019-08-03"
+date = "2023-04-01"
 tags = ["hugo"]
 categories = ["posts"]
 +++
