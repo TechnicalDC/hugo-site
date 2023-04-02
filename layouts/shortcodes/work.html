@@ -1,0 +1,26 @@
+<h1>Work Experience</h1>
+
+<div class="work-list">
+	{{ range .Site.Data.work.work }}
+        <div class="work">
+            <p>
+                <div class="date">
+						 {{ (time .start).Format "Jan, 2006" }}
+						 -
+						 {{ if gt (len .end) 0 }}
+							{{  (time .end).Format "Jan, 2006"  }}
+						 {{ else }}
+							Present
+						{{ end }}
+					 </div>    
+					 <h2>{{ .title }}</h2>
+					 {{ .company }}<br>
+					 <ul>
+						 {{ range .details }}
+						 <li>{{ . }}</li>
+						{{ end }}
+					 </ul>
+            </p>
+        </div>
+{{ end }}
+</div>

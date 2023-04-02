@@ -211,6 +211,11 @@ img {
     padding-left: 130px;
     top: 0;
 }
+.work-list {
+    position: relative;
+    padding-left: 180px;
+    top: 0;
+}
 
 .post h1, .post h2 {
     padding-top: 0;
@@ -223,6 +228,15 @@ img {
     position: absolute;
     left: 0px;
     width: 130px;
+    z-index: 400;
+    padding-top: 0;
+}
+
+.work-list .date {
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    width: 180px;
     z-index: 400;
     padding-top: 0;
 }
@@ -248,25 +262,27 @@ img {
 .frameworks,
 .devtools {
 	padding:20px;
+
 }
 .languages ul,
 .frameworks ul,
 .devtools ul {
-	padding:0px;
+	margin: auto;
 }
 .skills li {
 	list-style: none;
+	margin: 0px;
 }
 
 .skills li::before, .skills li::after {
     content: "";
     position: absolute;
-    left: -0.75rem;
+    left: 0.3rem;
 }
 .skills li::before {
     border-top: var(--branch);
     top: 0.75rem;
-    width: 0.5rem;
+    width: 0.7rem;
 }
 .skills li::after {
     border-left: var(--branch);
@@ -326,7 +342,7 @@ img {
 		 margin-right: 30px;
 	 }
 
-	 .posts-list {
+	 .posts-list, .work-list {
 		 position: relative;
 		 padding-left: 0;
 		 top: 0;
@@ -336,7 +352,7 @@ img {
 		 padding-top: 0;
 	 }
 
-	 .posts-list .date {
+	 .posts-list .date, .work-list .date {
 		 display: inline-block;
 		 position: absolute;
 		 left: 0px;
@@ -347,6 +363,11 @@ img {
 		 display: none;
 	 }
 
+	 .languages,
+	 .frameworks,
+	 .devtools {
+		 margin: 0% 20%;
+	 }
 
 	 .footer {
 		 margin-top: 50px;

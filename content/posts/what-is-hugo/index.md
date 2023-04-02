@@ -1,7 +1,7 @@
 +++
 title = "What is hugo"
 date = "2023-04-01"
-tags = ["hugo"]
+tags = ["hugo","golang","static-site"]
 categories = ["posts"]
 +++
 
