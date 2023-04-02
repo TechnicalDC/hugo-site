@@ -9,6 +9,8 @@ Hugo is an open-source project and lives by the work of its contributors. There 
 
 <!--more-->
 
+{{< figure src="hugo-logo.png" alt="logo" >}}
+
 ## Assumptions
 
 This contribution guide takes a step-by-step approach in hopes of helping newcomers. Therefore, we only assume the following:
