@@ -1,6 +1,6 @@
 baseURL = 'https://technicaldc.github.io/'
 languageCode = 'en-us'
-title = 'technical.dc'
+title = 'technicaldc'
 theme = "hugo-theme-console"
 enableEmoji = true
 paginate = 9
