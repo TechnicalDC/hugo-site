@@ -26,17 +26,13 @@ summaryLength = 10
   name = "videos/"
   url = "videos/"
 
-  [[params.navlinks]]
-  name = "contact/"
-  url = "contact/"
-
   [[params.social]]
   name = "github"
   url = "https://github.com/technicaldc"
 
   [[params.social]]
   name = "youtube"
-  url = "https://youtube.com/@TechnicalDC25"
+  url = "https://youtube.com/@TheTechnicalDC"
 
   [[params.social]]
   name = "instagram"
