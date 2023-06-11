@@ -32,14 +32,17 @@
 
 :root {
     --global-font-size: 14px;
-    --global-font-color: #444;
+    --global-font-color: #CBCCC6;
+	 --primary-color: #5CCFE6;
+	 --accent-color: #BAE67E;
+	 --primary-background-color: #1F2430;
     --mono-font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     --font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     --global-line-height: 1.6em;
     --page-width: 70em;
     --display-h1-decoration: 1;
     --code-bg-color: #fff;
-    --branch: 2px solid #444;
+    --branch: 2px solid var(--global-font-color);
 }
 
 @media only screen and (max-width: 850px) {
@@ -74,7 +77,8 @@
 body {
     font-family: var(--font-stack);
     font-size: var(--global-font-size);
-    background-color: #fff;
+    background-color: var(--primary-background-color);
+	 color: var(--global-font-color);
     margin-bottom: 75px;
 }
 
@@ -92,6 +96,15 @@ h6,
 .h6 {
     font-family: var(--font-stack);
     clear: both;
+}
+
+.terminal h1,
+.terminal h2,
+.terminal h3,
+.terminal h4,
+.terminal h5,
+.terminal h6 {
+	 color: var(--primary-color);
 }
 
 h1 {
@@ -152,6 +165,11 @@ h6::before {
 
 .content-column-content .command {
     color: #aaa;
+}
+
+a:hover, terminal-menu a:hover {
+	background-color: var(--primary-background-color);
+	color: var(--accent-color);
 }
 
 p.social a {
@@ -222,6 +240,10 @@ img {
 }
 .card-grid > .card > * {
 	display: block;
+}
+
+.terminal-nav {
+	color: var(--global-font-color);
 }
 
 .terminal-prompt::after {
